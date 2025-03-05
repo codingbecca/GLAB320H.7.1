@@ -49,7 +49,7 @@ function App() {
   const defaultMovies = ['Clueless', 'Knives Out', 'Wicked', 'Paddington', 'The Holy Mountain', 'Shock Treatment' ]
 
   useEffect(()=>{
-    const randomIdx = Math.floor(Math.random()* defaultMovies.length + 1)
+    const randomIdx = Math.floor(Math.random()* defaultMovies.length)
     movieSearch(defaultMovies[randomIdx]);
   }, [])
 

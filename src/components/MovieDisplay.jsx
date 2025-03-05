@@ -1,3 +1,6 @@
+import Skeleton from 'react-loading-skeleton'
+import 'react-loading-skeleton/dist/skeleton.css'
+
 export default function MovieDisplay({movie}) {
     const loaded = () =>{ 
     return (
@@ -12,7 +15,12 @@ export default function MovieDisplay({movie}) {
 
     const loading = () => {
         return (
-            <h1>Movie not found</h1>
+            <div>
+                <h1><Skeleton highlightColor='#f5f5f5'/></h1>
+                <h2><Skeleton /></h2>
+                <Skeleton height="450px"/>
+                <h2><Skeleton /></h2>
+            </div>
         )
     }
 
