@@ -1,4 +1,5 @@
 export default function MovieDisplay({movie}) {
+    const loaded = () =>{ 
     return (
         <div>
             <h1>{movie.Title}</h1>
@@ -7,5 +8,13 @@ export default function MovieDisplay({movie}) {
             <h2>{movie.Year}</h2>
 
         </div>
-    )
+    )}
+
+    const loading = () => {
+        return (
+            <h1>Movie not found</h1>
+        )
+    }
+
+    return movie ? loaded() : loading();
 }

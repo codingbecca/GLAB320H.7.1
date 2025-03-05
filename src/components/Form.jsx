@@ -15,6 +15,10 @@ export default function Form({movieSearch}) {
     const handleSubmit = (e) => {
         e.preventDefault();
         movieSearch(formData.searchTerm);
+        setFormData({
+            ...formData,
+            searchTerm: ''
+        })
     }
 
     return (
