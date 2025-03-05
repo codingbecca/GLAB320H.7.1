@@ -18,7 +18,7 @@ function App() {
     }
   }
 
-  // ? I tried to generate a random movie from a random id but it appears that IMDB ids aren't sequential and there are a lot of ids that are either dead (deleted) or were never used in the first place making this a poor solution
+  // ? I tried to generate a random movie from a random id but it appears that IMDB ids aren't sequential and there are a lot of ids that are either dead (deleted) or were never used in the first place making this a poor solution. I also may have made the upper bound on my random number too high
   // useEffect(() => {
   //   const searchById = async(retries = 5) => {
   //     if (retries === 0) {
