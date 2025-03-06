@@ -11,7 +11,7 @@ function App() {
 
   const movieSearch = async (searchTerm) => {
     try {
-      const res = await axios(`http://www.omdbapi.com/?apikey=${apiKey}&t=${searchTerm}`);
+      const res = await axios(`https://www.omdbapi.com/?apikey=${apiKey}&t=${searchTerm}`);
       setMovie(res.data);
     } catch (e) {
       console.error(e);
